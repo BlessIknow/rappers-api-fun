@@ -33,6 +33,6 @@ app.get("/api/:rapperName", (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Port ${PORT} is curently runing, you better go catch it!`);
 });
